@@ -1,0 +1,19 @@
+/* Custom styles for LIC portal */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input, select, textarea {
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 2px #2563eb44;
+}
+
+.otp-input {
+  letter-spacing: 0.3em;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPDG - Life Insurance Corporation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+
+  <!-- Header -->
+  <header class="bg-blue-900 dark:bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">LIC India</h1>
+    <nav class="space-x-3 text-sm md:text-base">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="buy-now.html" class="hover:text-yellow-300">Buy</a>
+      <a href="compare.html" class="hover:text-yellow-300">Compare</a>
+      <a href="dashboard.html" class="hover:text-yellow-300">Dashboard</a>
+      <a href="faq.html" class="hover:text-yellow-300">FAQ</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </nav>
+    <button onclick="toggleDarkMode()" class="bg-yellow-300 text-black px-3 py-1 rounded hover:bg-yellow-400">Toggle Mode</button>
+  </header>
+
+  <!-- Video Banner -->
+  <video autoplay loop muted playsinline controls style="width: 100%; max-height: 340px;">
+    <source src="VID_20250709215521.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-gradient-to-br from-blue-100 to-blue-300 dark:from-gray-800 dark:to-gray-700">
+    <h2 class="text-4xl font-bold mb-4">Secure Your Future with LIC</h2>
+    <p class="text-lg mb-6">India's Most Trusted Life Insurance Provider Since 1956</p>
+    <a href="buy-now.html" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-900">Get Started</a>
+  </section>
+
+  <!-- Featured Plans -->
+  <section class="max-w-6xl mx-auto py-12 px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Popular Plans</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-5 text-center">
+        <img src="https://esales.licindia.in/static/media/Family02.2834bd4bd454e9265d58.png" alt="Jeevan Utsav" class="mx-auto mb-4 rounded" />
+        <h4 class="font-semibold text-xl">Jeevan Utsav</h4>
+        <p class="text-sm mt-2">LIC’s Jeevan Utsav is a lifelong income and protection plan that offers guaranteed annual income after the premium paying term. It combines life cover with regular payouts, making it ideal for long-term financial planning. The plan offers flexibility to choose between regular income or flexi income options, ensuring financial security for your future goals.      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-5 text-center">
+        <img src="https://licindia.in/documents/d/guest/tech-term-1-min-1-" alt="New Tech Term" class="mx-auto mb-4 rounded" />
+        <h4 class="font-semibold text-xl">New Tech Term</h4>
+        <p class="text-sm mt-2">LIC’s New Tech-Term Plan is a pure life insurance term plan that offers financial protection to your family at extremely affordable premiums. Available exclusively online, this plan provides high coverage amounts and flexible options such as level sum assured or increasing sum assured. It also offers options for single or regular premium payment and includes additional riders like the Accidental Benefit Rider. The New Tech-Term plan ensures that your loved ones are financially secure in case of your unfortunate demise during the policy term. With a minimum sum assured of ₹50 lakhs, flexible premium paying terms, and an easy online application process, LIC’s New Tech-Term is ideal for digitally savvy individuals seeking reliable and cost-effective life cover.      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-5 text-center">
+        <img src="https://sumassured.in/wp-content/uploads/2017/11/LIC-Cancer-Cover-Cover.png" alt="Cancer Cover" class="mx-auto mb-4 rounded" />
+        <h4 class="font-semibold text-xl">Cancer Cover</h4>
+        <p class="text-sm mt-2">LIC’s Cancer Cover is a specialized health insurance plan designed to provide financial protection exclusively against cancer. It offers comprehensive coverage for both early and major stages of cancer, ensuring timely financial assistance during critical moments. Upon early-stage diagnosis, a lump sum of 25% of the sum assured is paid, along with a premium waiver for three years. In the case of major-stage cancer, the plan provides 100% of the sum assured, waives all future premiums, and offers an additional monthly income benefit for 10 years. With affordable premiums, tax benefits, and coverage up to ₹50 lakhs, LIC’s Cancer Cover is a reliable shield for individuals seeking focused protection against cancer.
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center bg-blue-900 text-white py-12">
+    <h3 class="text-2xl font-bold mb-4">Join Over 25 Crore Policyholders</h3>
+    <p class="mb-6">Secure your life with India's most trusted insurer today.</p>
+    <a href="buy-now.html" class="bg-yellow-300 text-black px-6 py-2 rounded hover:bg-yellow-400">Buy Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center text-gray-700 dark:text-gray-300 p-4">
+    &copy; 2025 LIC India. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

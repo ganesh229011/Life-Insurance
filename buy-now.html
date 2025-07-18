@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy LIC Plan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+
+  <!-- Navbar -->
+  <header class="bg-blue-900 dark:bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-xl font-bold">LIC India</div>
+        <button class="md:hidden focus:outline-none" onclick="document.getElementById('nav-menu').classList.toggle('hidden')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        <nav id="nav-menu" class="hidden md:flex space-x-4 text-sm md:text-base items-center">
+          <a href="index.html" class="hover:text-yellow-300">Home</a>
+          <a href="about.html" class="hover:text-yellow-300">About</a>
+          <a href="buy-now.html" class="hover:text-yellow-300">Buy</a>
+          <a href="compare.html" class="hover:text-yellow-300">Compare</a>
+          <a href="dashboard.html" class="hover:text-yellow-300">Dashboard</a>
+          <a href="faq.html" class="hover:text-yellow-300">FAQ</a>
+          <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+          <button onclick="toggleDarkMode()" class="bg-yellow-300 text-black px-2 py-1 rounded hover:bg-yellow-400">🌓</button>
+        </nav>
+      </div>
+      <div id="nav-menu" class="md:hidden hidden flex-col space-y-2 pb-4">
+        <a href="index.html" class="block hover:text-yellow-300">Home</a>
+        <a href="about.html" class="block hover:text-yellow-300">About</a>
+        <a href="buy-now.html" class="block hover:text-yellow-300">Buy</a>
+        <a href="compare.html" class="block hover:text-yellow-300">Compare</a>
+        <a href="dashboard.html" class="block hover:text-yellow-300">Dashboard</a>
+        <a href="faq.html" class="block hover:text-yellow-300">FAQ</a>
+        <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
+        <button onclick="toggleDarkMode()" class="bg-yellow-300 text-black px-2 py-1 rounded hover:bg-yellow-400">Toggle Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Buy Form -->
+  <main class="max-w-3xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-6 text-center">Buy a LIC Plan</h2>
+    <form onsubmit="handleSubmit(event)" class="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+      <input type="text" placeholder="Full Name" required class="w-full p-2 border rounded dark:bg-gray-700" />
+      <input type="email" placeholder="Email Address" required class="w-full p-2 border rounded dark:bg-gray-700" />
+      <input type="tel" placeholder="Mobile Number" required class="w-full p-2 border rounded dark:bg-gray-700" />
+      <select class="w-full p-2 border rounded dark:bg-gray-700" required>
+        <option value="">-- Select Plan --</option>
+        <option value="tech-term">LIC Tech-Term</option>
+        <option value="jeevan-utsav">LIC Jeevan Utsav</option>
+        <option value="cancer-cover">LIC Cancer Cover</option>
+      </select>
+      <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-900">Proceed to Buy</button>
+    </form>
+
+    <!-- Thank You Message -->
+    <div id="thanksMessage" class="hidden text-center text-green-600 mt-6 text-lg font-medium">
+      ✅ Thank you for purchasing your plan! A confirmation has been sent to your email.
+    </div>
+  </main>
+
+  <!-- OTP Modal -->
+  <div id="otpModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-full max-w-sm text-center">
+      <h3 class="text-lg font-semibold mb-4">Enter OTP</h3>
+      <input id="otpInput" type="text" maxlength="4" placeholder="1234" class="otp-input w-full p-2 border rounded dark:bg-gray-700" />
+      <p id="otpError" class="text-red-500 text-sm mt-2 hidden">Invalid OTP. Please try again.</p>
+      <div class="mt-4 flex justify-center gap-4">
+        <button onclick="verifyOTP()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Verify</button>
+        <button onclick="closeOTP()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center text-gray-700 dark:text-gray-300 p-4 mt-10">
+    &copy; 2025 LIC India. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
