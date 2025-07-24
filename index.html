@@ -20,7 +20,7 @@
       <a href="faq.html" class="hover:text-yellow-300">FAQ</a>
       <a href="contact.html" class="hover:text-yellow-300">Contact</a>
     </nav>
-    <button onclick="toggleDarkMode()" class="bg-yellow-300 text-black px-3 py-1 rounded hover:bg-yellow-400">Toggle Mode</button>
+    <button onclick="toggleDarkMode()" class="bg-yellow-300 text-black px-3 py-1 rounded hover:bg-yellow-400 transition">Toggle Mode</button>
   </header>
 
   <!-- Video Banner -->
@@ -40,18 +40,25 @@
   <section class="max-w-6xl mx-auto py-12 px-4">
     <h3 class="text-3xl font-bold text-center mb-10">Popular Plans</h3>
     <div class="grid md:grid-cols-3 gap-6">
+      <!-- Jeevan Utsav -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-5 text-center">
         <img src="https://esales.licindia.in/static/media/Family02.2834bd4bd454e9265d58.png" alt="Jeevan Utsav" class="mx-auto mb-4 rounded" />
         <h4 class="font-semibold text-xl">Jeevan Utsav</h4>
-        <p class="text-sm mt-2">LIC’s Jeevan Utsav is a lifelong income and protection plan that offers guaranteed annual income after the premium paying term. It combines life cover with regular payouts, making it ideal for long-term financial planning. The plan offers flexibility to choose between regular income or flexi income options, ensuring financial security for your future goals.      </div>
+        <p class="text-sm mt-2">LIC’s Jeevan Utsav is a lifelong income and protection plan that offers guaranteed annual income after the premium paying term. It combines life cover with regular payouts, making it ideal for long-term financial planning.</p>
+      </div>
+
+      <!-- New Tech Term -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-5 text-center">
         <img src="https://licindia.in/documents/d/guest/tech-term-1-min-1-" alt="New Tech Term" class="mx-auto mb-4 rounded" />
         <h4 class="font-semibold text-xl">New Tech Term</h4>
-        <p class="text-sm mt-2">LIC’s New Tech-Term Plan is a pure life insurance term plan that offers financial protection to your family at extremely affordable premiums. Available exclusively online, this plan provides high coverage amounts and flexible options such as level sum assured or increasing sum assured. It also offers options for single or regular premium payment and includes additional riders like the Accidental Benefit Rider. The New Tech-Term plan ensures that your loved ones are financially secure in case of your unfortunate demise during the policy term. With a minimum sum assured of ₹50 lakhs, flexible premium paying terms, and an easy online application process, LIC’s New Tech-Term is ideal for digitally savvy individuals seeking reliable and cost-effective life cover.      </div>
+        <p class="text-sm mt-2">LIC’s New Tech-Term Plan is a pure life insurance term plan that offers financial protection to your family at affordable premiums. Offers level or increasing sum assured and rider options like Accidental Benefit.</p>
+      </div>
+
+      <!-- Cancer Cover -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-5 text-center">
         <img src="https://sumassured.in/wp-content/uploads/2017/11/LIC-Cancer-Cover-Cover.png" alt="Cancer Cover" class="mx-auto mb-4 rounded" />
         <h4 class="font-semibold text-xl">Cancer Cover</h4>
-        <p class="text-sm mt-2">LIC’s Cancer Cover is a specialized health insurance plan designed to provide financial protection exclusively against cancer. It offers comprehensive coverage for both early and major stages of cancer, ensuring timely financial assistance during critical moments. Upon early-stage diagnosis, a lump sum of 25% of the sum assured is paid, along with a premium waiver for three years. In the case of major-stage cancer, the plan provides 100% of the sum assured, waives all future premiums, and offers an additional monthly income benefit for 10 years. With affordable premiums, tax benefits, and coverage up to ₹50 lakhs, LIC’s Cancer Cover is a reliable shield for individuals seeking focused protection against cancer.
+        <p class="text-sm mt-2">LIC’s Cancer Cover provides financial protection for early and major stages of cancer, with lump sum benefits, premium waivers, and monthly income during major diagnosis.</p>
       </div>
     </div>
   </section>
@@ -68,6 +75,28 @@
     &copy; 2025 LIC India. All rights reserved.
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    // Apply theme on load
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
 </body>
 </html>
