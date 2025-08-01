@@ -34,8 +34,7 @@ export default function Home() {
             <img src="/jeevan-utsav.png" alt="Jeevan Utsav" className="mx-auto mb-4 rounded" />
             <h4 className="font-semibold text-xl">Jeevan Utsav</h4>
             <p className="text-sm mt-2">
-              LIC’s Jeevan Utsav is a lifelong income and protection plan that offers guaranteed annual income...
-            </p>
+              LIC’s Jeevan Utsav is a lifelong income and protection plan that offers guaranteed annual income after the premium paying term. It combines life cover with regular payouts, making it ideal for long-term financial planning. The plan ensures financial stability by providing a steady stream of income for life, while also securing the policyholder’s family through comprehensive life insurance coverage. Its flexible features make it suitable for retirement planning, legacy creation, and meeting future financial goals with confidence.</p>
           </div>
 
           {/* New Tech Term */}
@@ -43,8 +42,7 @@ export default function Home() {
             <img src="/newtechterm.jpg" alt="New Tech Term" className="mx-auto mb-4 rounded" />
             <h4 className="font-semibold text-xl">New Tech Term</h4>
             <p className="text-sm mt-2">
-              LIC’s New Tech-Term Plan is a pure life insurance term plan offering affordable premiums, high coverage...
-            </p>
+              LIC’s New Tech-Term Plan is a pure life insurance term plan offering affordable premiums, high coverage, and multiple payout options to secure your family’s future.Tailored to ensure financial security for your loved ones, it provides flexible payout options, allowing the policyholder to choose how the death benefit is distributed to the nominee. With its comprehensive protection and customizable features, this plan is an ideal solution for those looking to secure their family's future against life’s uncertainties.</p>
           </div>
 
           {/* Cancer Cover */}
@@ -52,8 +50,7 @@ export default function Home() {
             <img src="/cancercover.jpg" alt="Cancer Cover" className="mx-auto mb-4 rounded" />
             <h4 className="font-semibold text-xl">Cancer Cover</h4>
             <p className="text-sm mt-2">
-              LIC’s Cancer Cover is a specialized health insurance plan designed to offer financial protection...
-            </p>
+              LIC’s Cancer Cover is a specialized health insurance plan designed to offer financial protection against cancer-related risks. It provides comprehensive coverage across both early and major stages of cancer, ensuring that policyholders are supported throughout their treatment journey. The plan offers lump sum payouts for early and major stage diagnoses, premium waivers to ease the financial burden, and regular income benefits in case of a major stage diagnosis.</p>
           </div>
 
           {/* LIC's Jeevan Labh */}
@@ -61,8 +58,7 @@ export default function Home() {
             <img src="/jeevan-labh.jpg" alt="LIC's Jeevan Labh" className="mx-auto mb-4 rounded" />
             <h4 className="font-semibold text-xl">LIC's Jeevan Labh</h4>
             <p className="text-sm mt-2">
-              LIC’s Jeevan Labh (Plan No. 936) is a non-linked, with-profits endowment plan...
-            </p>
+              LIC’s Jeevan Labh (Plan No. 936) is a non-linked, with-profits endowment plan that combines life insurance with savings. It offers limited premium payment terms—10, 15, or 16 years—for policy durations of 16, 21, or 25 years. On maturity, it provides the sum assured along with accrued bonuses and a final additional bonus if declared.</p>
           </div>
         </div>
       </section>
